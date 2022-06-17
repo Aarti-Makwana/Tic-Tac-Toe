@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 7vh;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.gameContainer {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 9vw);
+    grid-template-columns: repeat(3, 9vw);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(249, 236, 236);
+    cursor: pointer;
+}
+
+.gameInfo {
+    padding: 0 34px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 21px;
+}
+
+.imageBox img {
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+#reset {
+    margin: 12px 12px;
+    padding: 5px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 16px;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.line {
+    height: 3px;
+    width: 0;
+    background-color: #7e3838;
+    position: absolute;
+    border-radius: 3px;
+    transition: width 0.5s ease-in-out;
+
+    /* transform: translate(2vw, 13vw) rotate(90deg); */
+}
+
+@media screen and (max-width:962px) {
+    .gameContainer {
+
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 34px;
+    }
+
+    .gameInfo div {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .gameInfo h1 {
+        font-size: 1.1rem;
+    }
+
+    .Container {
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+}
